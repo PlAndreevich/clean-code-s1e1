@@ -21,9 +21,11 @@ body {
 }
 
 @media (max-width:768px) {
+
   .top {
     text-align: center;
   }
+  
 }
 
 .main {
@@ -106,7 +108,7 @@ label[for="new-task"] {
   margin: 0 0 20px;
 }
 
-input#new-task {
+#new-task {
   width: 318px;
 }
 
@@ -140,13 +142,13 @@ li>input[type="text"] {
   width: 226px
 }
 
-button.delete img {
+.delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+.delete img:hover {
   transform: rotateZ(0);
 }
 
@@ -160,11 +162,11 @@ ul li input[type=text] {
   display: none
 }
 
-ul li.edit-mode input[type=text] {
+ul .edit-mode input[type=text] {
   display: inline-block;
   width: 224px
 }
 
-ul li.edit-mode label {
+ul .edit-mode label {
   display: none;
 }
